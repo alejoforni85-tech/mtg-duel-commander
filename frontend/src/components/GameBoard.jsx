@@ -188,7 +188,7 @@ export default function GameBoard() {
           >
             <div>Turn {state.turn}</div>
             <div style={{ fontSize: 24, opacity: 0.8 }}>
-              {me.name}'s Turn
+              {me.name || 'Player'}'s Turn
             </div>
           </motion.div>
         )}
