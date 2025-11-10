@@ -57,8 +57,8 @@ export default function GameBoard() {
 
   if (!state) return null;
 
-  const me = state.players[0];
-  const opp = state.players[1];
+  const me = state.players?.[0] || {};
+  const opp = state.players?.[1] || {};
 
   // Animation variants
   const boardVariants = {
