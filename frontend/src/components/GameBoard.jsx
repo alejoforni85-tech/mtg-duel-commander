@@ -470,7 +470,7 @@ export default function GameBoard() {
         >
           <div style={{ position: 'relative' }}>
             <h3 style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-              <span>{me.name}</span>
+              <span>{me.name || 'Player'}</span>
               <LifeCounter
                 player={me}
                 lifeChange={lifeChange[me.id]}
